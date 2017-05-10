@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 require("angular2-universal-polyfills/browser");
 var core_1 = require("@angular/core");
 var angular2_universal_1 = require("angular2-universal");

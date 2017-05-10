@@ -9,8 +9,6 @@ namespace CPDivision.Web
 {
     public class Startup
     {
-        public IConfigurationRoot Configuration { get; }
-
         public Startup(IHostingEnvironment env)
         {
             var builder = new ConfigurationBuilder()
@@ -20,6 +18,8 @@ namespace CPDivision.Web
                 .AddEnvironmentVariables();
             Configuration = builder.Build();
         }
+
+        public IConfigurationRoot Configuration { get; }
 
         public void ConfigureServices(IServiceCollection services)
         {
