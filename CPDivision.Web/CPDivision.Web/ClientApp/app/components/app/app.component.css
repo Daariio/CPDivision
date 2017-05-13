@@ -1,5 +1,8 @@
 body {
-    padding: 50px;
     font-family: Arial;
     font-size: 14px;
+}
+
+.main {
+    margin-top: 40px;
 }

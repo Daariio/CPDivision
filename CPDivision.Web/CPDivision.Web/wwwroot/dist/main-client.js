@@ -59,7 +59,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "0651c19870a43c3ffec1"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "c789dc6fd8f4570e4191"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
@@ -1616,7 +1616,7 @@ exports = module.exports = __webpack_require__(2)();
 
 
 // module
-exports.push([module.i, "body {\n    padding: 50px;\n    font-family: Arial;\n    font-size: 14px;\n}\n", ""]);
+exports.push([module.i, "body {\n    font-family: Arial;\n    font-size: 14px;\n}\n\n.main {\n    margin-top: 40px;\n}", ""]);
 
 // exports
 
@@ -1630,7 +1630,7 @@ exports = module.exports = __webpack_require__(2)();
 
 
 // module
-exports.push([module.i, ".navbar {\n    background: #2a8fcf;\n    border-radius: 0;\n    margin-bottom: 0;\n}\n\n    .navbar.navbar-default .navbar-nav > li > a {\n        color: #fff;\n        transition: all 200ms ease-out;\n        -webkit-transition: all 200ms ease-out;\n        -ms-transition: all 200ms ease-out;\n    }\n\n        .navbar.navbar-default .navbar-nav > li > a:hover {\n            background: #0075b3;\n        }\n\n    .navbar.navbar-default .navbar-nav > li.dropdown > a:hover,\n    .navbar.navbar-default .navbar-nav > li.dropdown > a:focus,\n    .navbar.navbar-default .navbar-nav > li.dropdown > a:active {\n        background: #0075b3;\n        color: #fff;\n    }\n\n    .navbar.navbar-default .navbar-nav > li.menu-list .list-category a {\n        color: #333;\n    }\n\n    .navbar.navbar-default .navbar-nav > li > p.navbar-text {\n        color: #fff;\n    }\n\n.nav.navbar-nav > li {\n    border-left: 1px solid rgba(255, 255, 255, 0.5);\n}\n\n.navbar-brand,\n.navbar-brand:focus {\n    color: #fff;\n}\n\n    .navbar-brand:hover,\n    .navbar-brand:active {\n        background: #0075b3;\n        color: #fff;\n    }\n\n#login-dp {\n    min-width: 250px;\n    padding: 14px 14px 0;\n    overflow: hidden;\n    background-color: rgba(255,255,255,.8);\n}\n\n    #login-dp .help-block {\n        font-size: 12px\n    }\n\n    #login-dp .bottom {\n        background-color: rgba(255,255,255,.8);\n        border-top: 1px solid #ddd;\n        clear: both;\n        padding: 14px;\n    }\n\n    #login-dp .social-buttons {\n        margin: 12px 0\n    }\n\n        #login-dp .social-buttons a {\n            width: 49%;\n        }\n\n    #login-dp .form-group {\n        margin-bottom: 10px;\n    }\n\n.btn-fb {\n    color: #fff;\n    background-color: #3b5998;\n}\n\n    .btn-fb:hover {\n        color: #fff;\n        background-color: #496ebc\n    }\n\n.btn-tw {\n    color: #fff;\n    background-color: #55acee;\n}\n\n    .btn-tw:hover {\n        color: #fff;\n        background-color: #59b5fa;\n    }\n\n@media(max-width:768px) {\n    #login-dp {\n        background-color: inherit;\n        color: #fff;\n    }\n\n        #login-dp .bottom {\n            background-color: inherit;\n            border-top: 0 none;\n        }\n}\n", ""]);
+exports.push([module.i, ".navbar {\n    background: #2a8fcf;\n    border-radius: 0;\n    margin-bottom: 0;\n    overflow: hidden;\n    position: fixed;\n    top: 0;\n    width: 100%;\n    z-index: 1;\n}\n\n    .navbar.navbar-default .navbar-nav > li > a {\n        color: #fff;\n        transition: all 200ms ease-out;\n        -webkit-transition: all 200ms ease-out;\n        -ms-transition: all 200ms ease-out;\n    }\n\n        .navbar.navbar-default .navbar-nav > li > a:hover {\n            background: #0075b3;\n        }\n\n    .navbar.navbar-default .navbar-nav > li.dropdown > a:hover,\n    .navbar.navbar-default .navbar-nav > li.dropdown > a:focus,\n    .navbar.navbar-default .navbar-nav > li.dropdown > a:active {\n        background: #0075b3;\n        color: #fff;\n    }\n\n    .navbar.navbar-default .navbar-nav > li.menu-list .list-category a {\n        color: #333;\n    }\n\n    .navbar.navbar-default .navbar-nav > li > p.navbar-text {\n        color: #fff;\n    }\n\n.nav.navbar-nav > li {\n    border-left: 1px solid rgba(255, 255, 255, 0.5);\n}\n\n.navbar-brand,\n.navbar-brand:focus {\n    color: #fff;\n}\n\n    .navbar-brand:hover,\n    .navbar-brand:active {\n        background: #0075b3;\n        color: #fff;\n    }\n\n#login-dp {\n    min-width: 250px;\n    padding: 14px 14px 0;\n    overflow: hidden;\n    background-color: rgba(255,255,255,.8);\n}\n\n    #login-dp .help-block {\n        font-size: 12px\n    }\n\n    #login-dp .bottom {\n        background-color: rgba(255,255,255,.8);\n        border-top: 1px solid #ddd;\n        clear: both;\n        padding: 14px;\n    }\n\n    #login-dp .social-buttons {\n        margin: 12px 0\n    }\n\n        #login-dp .social-buttons a {\n            width: 49%;\n        }\n\n    #login-dp .form-group {\n        margin-bottom: 10px;\n    }\n\n.btn-fb {\n    color: #fff;\n    background-color: #3b5998;\n}\n\n    .btn-fb:hover {\n        color: #fff;\n        background-color: #496ebc\n    }\n\n.btn-tw {\n    color: #fff;\n    background-color: #55acee;\n}\n\n    .btn-tw:hover {\n        color: #fff;\n        background-color: #59b5fa;\n    }\n\n@media(max-width:768px) {\n    #login-dp {\n        background-color: inherit;\n        color: #fff;\n    }\n\n        #login-dp .bottom {\n            background-color: inherit;\n            border-top: 0 none;\n        }\n}\n", ""]);
 
 // exports
 
@@ -1965,7 +1965,7 @@ module.exports = XmlEntities;
 /* 19 */
 /***/ (function(module, exports) {
 
-module.exports = "<div class='container-fluid'>\r\n    <div class='row'>\r\n        <nav-menu></nav-menu>\r\n        <div class=\"col-lg-8 col-lg-offset-2\">\r\n            <router-outlet></router-outlet>\r\n        </div>\r\n    </div>\r\n</div>";
+module.exports = "<div class='container-fluid'>\r\n    <div class='row'>\r\n        <nav-menu></nav-menu>\r\n        <div class=\"main\">\r\n            <div class=\"col-lg-8 col-lg-offset-2\">\r\n                <router-outlet></router-outlet>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>";
 
 /***/ }),
 /* 20 */
