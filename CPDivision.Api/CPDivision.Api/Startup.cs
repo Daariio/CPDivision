@@ -23,12 +23,18 @@ namespace CPDivision.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            services.AddCors();
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
+
+            app.UseCors(builder => builder.AllowAnyHeader()
+                .AllowAnyMethod()
+                .AllowAnyOrigin()
+                .AllowCredentials());
 
             app.UseMvc();
         }

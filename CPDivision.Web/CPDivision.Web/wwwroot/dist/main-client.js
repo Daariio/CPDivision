@@ -59,7 +59,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "c789dc6fd8f4570e4191"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "fae968195cc5764316de"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
@@ -1495,6 +1495,7 @@ var angular2_universal_1 = __webpack_require__(4);
 var app_component_1 = __webpack_require__(11);
 var home_component_1 = __webpack_require__(12);
 var navmenu_component_1 = __webpack_require__(13);
+var testdata_component_1 = __webpack_require__(35);
 var AppModule = (function () {
     function AppModule() {
     }
@@ -1507,12 +1508,14 @@ AppModule = __decorate([
             app_component_1.AppComponent,
             home_component_1.HomeComponent,
             navmenu_component_1.NavMenuComponent,
+            testdata_component_1.TestDataComponent
         ],
         imports: [
             angular2_universal_1.UniversalModule,
             router_1.RouterModule.forRoot([
                 { path: '', redirectTo: 'home', pathMatch: 'full' },
                 { path: 'home', component: home_component_1.HomeComponent },
+                { path: 'test-data', component: testdata_component_1.TestDataComponent },
                 { path: '**', redirectTo: 'home' }
             ])
         ]
@@ -1977,7 +1980,7 @@ module.exports = "<h1>Hello World!</h1>\n";
 /* 21 */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"navbar navbar-default\" role=\"navigation\">\n    <div class=\"container-fluid\">\n        <!-- Brand and toggle get grouped for better mobile display -->\n        <div class=\"navbar-header\">\n            <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\">\n                <span class=\"sr-only\">Toggle navigation</span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n            </button>\n            <a class=\"navbar-brand\" [routerLink]=\"['/home']\">Sekcja past</a>\n        </div>\n\n        <!-- Collect the nav links, forms, and other content for toggling -->\n        <div class=\"collapse navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\n            <ul class=\"nav navbar-nav\">\n                <li><a [routerLink]=\"['/home']\">Home</a></li>\n                <!--<li class=\"dropdown\">\n                    <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Dropdown <span class=\"caret\"></span></a>\n                    <ul class=\"dropdown-menu\" role=\"menu\">\n                         <li><a href=\"#\">Action</a></li>\n                        <li><a href=\"#\">Another action</a></li>\n                        <li><a href=\"#\">Something else here</a></li>\n                        <li class=\"divider\"></li>\n                        <li><a href=\"#\">Separated link</a></li>\n                        <li class=\"divider\"></li>\n                        <li><a href=\"#\">One more separated link</a></li>\n                    </ul>\n                </li>-->\n            </ul>\n            <!--<form class=\"navbar-form navbar-left\" role=\"search\">\n                <div class=\"form-group\">\n                    <input type=\"text\" class=\"form-control\" placeholder=\"Search\">\n                </div>\n                <button type=\"submit\" class=\"btn btn-default\">Submit</button>\n            </form>-->\n            <!--<ul class=\"nav navbar-nav navbar-right\">\n                <li><p class=\"navbar-text\">Already have an account?</p></li>\n                <li class=\"dropdown\">\n                    <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\"><b>Login</b> <span class=\"caret\"></span></a>\n                    <ul id=\"login-dp\" class=\"dropdown-menu\">\n                        <li>\n                            <div class=\"row\">\n                                <div class=\"col-md-12\">\n                                    Login via\n                                    <div class=\"social-buttons\">\n                                        <a href=\"#\" class=\"btn btn-fb\"><i class=\"fa fa-facebook\"></i> Facebook</a>\n                                        <a href=\"#\" class=\"btn btn-tw\"><i class=\"fa fa-twitter\"></i> Twitter</a>\n                                    </div>\n                                    or\n                                    <form class=\"form\" role=\"form\" method=\"post\" action=\"login\" accept-charset=\"UTF-8\" id=\"login-nav\">\n                                        <div class=\"form-group\">\n                                            <label class=\"sr-only\" for=\"exampleInputEmail2\">Email address</label>\n                                            <input type=\"email\" class=\"form-control\" id=\"exampleInputEmail2\" placeholder=\"Email address\" required>\n                                        </div>\n                                        <div class=\"form-group\">\n                                            <label class=\"sr-only\" for=\"exampleInputPassword2\">Password</label>\n                                            <input type=\"password\" class=\"form-control\" id=\"exampleInputPassword2\" placeholder=\"Password\" required>\n                                            <div class=\"help-block text-right\"><a href=\"\">Forget the password ?</a></div>\n                                        </div>\n                                        <div class=\"form-group\">\n                                            <button type=\"submit\" class=\"btn btn-primary btn-block\">Sign in</button>\n                                        </div>\n                                        <div class=\"checkbox\">\n                                            <label>\n                                                <input type=\"checkbox\"> keep me logged-in\n                                            </label>\n                                        </div>\n                                    </form>\n                                </div>\n                                <div class=\"bottom text-center\">\n                                    New here ? <a href=\"#\"><b>Join Us</b></a>\n                                </div>\n                            </div>\n                        </li>\n                    </ul>\n                </li>\n            </ul>-->\n        </div><!-- /.navbar-collapse -->\n    </div><!-- /.container-fluid -->\n</div>";
+module.exports = "<div class=\"navbar navbar-default\" role=\"navigation\">\n    <div class=\"container-fluid\">\n        <!-- Brand and toggle get grouped for better mobile display -->\n        <div class=\"navbar-header\">\n            <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\">\n                <span class=\"sr-only\">Toggle navigation</span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n            </button>\n            <a class=\"navbar-brand\" [routerLink]=\"['/home']\">Sekcja past</a>\n        </div>\n\n        <!-- Collect the nav links, forms, and other content for toggling -->\n        <div class=\"collapse navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\n            <ul class=\"nav navbar-nav\">\n                <li><a [routerLink]=\"['/home']\">Home</a></li>\n                <li><a [routerLink]=\"['/test-data']\">Test Data</a></li>\n                <!--<li class=\"dropdown\">\n                    <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Dropdown <span class=\"caret\"></span></a>\n                    <ul class=\"dropdown-menu\" role=\"menu\">\n                         <li><a href=\"#\">Action</a></li>\n                        <li><a href=\"#\">Another action</a></li>\n                        <li><a href=\"#\">Something else here</a></li>\n                        <li class=\"divider\"></li>\n                        <li><a href=\"#\">Separated link</a></li>\n                        <li class=\"divider\"></li>\n                        <li><a href=\"#\">One more separated link</a></li>\n                    </ul>\n                </li>-->\n            </ul>\n            <!--<form class=\"navbar-form navbar-left\" role=\"search\">\n                <div class=\"form-group\">\n                    <input type=\"text\" class=\"form-control\" placeholder=\"Search\">\n                </div>\n                <button type=\"submit\" class=\"btn btn-default\">Submit</button>\n            </form>-->\n            <!--<ul class=\"nav navbar-nav navbar-right\">\n                <li><p class=\"navbar-text\">Already have an account?</p></li>\n                <li class=\"dropdown\">\n                    <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\"><b>Login</b> <span class=\"caret\"></span></a>\n                    <ul id=\"login-dp\" class=\"dropdown-menu\">\n                        <li>\n                            <div class=\"row\">\n                                <div class=\"col-md-12\">\n                                    Login via\n                                    <div class=\"social-buttons\">\n                                        <a href=\"#\" class=\"btn btn-fb\"><i class=\"fa fa-facebook\"></i> Facebook</a>\n                                        <a href=\"#\" class=\"btn btn-tw\"><i class=\"fa fa-twitter\"></i> Twitter</a>\n                                    </div>\n                                    or\n                                    <form class=\"form\" role=\"form\" method=\"post\" action=\"login\" accept-charset=\"UTF-8\" id=\"login-nav\">\n                                        <div class=\"form-group\">\n                                            <label class=\"sr-only\" for=\"exampleInputEmail2\">Email address</label>\n                                            <input type=\"email\" class=\"form-control\" id=\"exampleInputEmail2\" placeholder=\"Email address\" required>\n                                        </div>\n                                        <div class=\"form-group\">\n                                            <label class=\"sr-only\" for=\"exampleInputPassword2\">Password</label>\n                                            <input type=\"password\" class=\"form-control\" id=\"exampleInputPassword2\" placeholder=\"Password\" required>\n                                            <div class=\"help-block text-right\"><a href=\"\">Forget the password ?</a></div>\n                                        </div>\n                                        <div class=\"form-group\">\n                                            <button type=\"submit\" class=\"btn btn-primary btn-block\">Sign in</button>\n                                        </div>\n                                        <div class=\"checkbox\">\n                                            <label>\n                                                <input type=\"checkbox\"> keep me logged-in\n                                            </label>\n                                        </div>\n                                    </form>\n                                </div>\n                                <div class=\"bottom text-center\">\n                                    New here ? <a href=\"#\"><b>Join Us</b></a>\n                                </div>\n                            </div>\n                        </li>\n                    </ul>\n                </li>\n            </ul>-->\n        </div><!-- /.navbar-collapse -->\n    </div><!-- /.container-fluid -->\n</div>";
 
 /***/ }),
 /* 22 */
@@ -2469,6 +2472,60 @@ __webpack_require__(7);
 __webpack_require__(6);
 module.exports = __webpack_require__(5);
 
+
+/***/ }),
+/* 35 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__(1);
+var http_1 = __webpack_require__(37);
+var TestDataComponent = (function () {
+    function TestDataComponent(http) {
+        var _this = this;
+        http.get('http://localhost:3841/api/test').subscribe(function (result) {
+            _this.persons = result.json();
+        });
+    }
+    return TestDataComponent;
+}());
+TestDataComponent = __decorate([
+    core_1.Component({
+        selector: 'testdata',
+        template: __webpack_require__(36)
+    }),
+    __metadata("design:paramtypes", [http_1.Http])
+], TestDataComponent);
+exports.TestDataComponent = TestDataComponent;
+var Person = (function () {
+    function Person() {
+    }
+    return Person;
+}());
+
+
+/***/ }),
+/* 36 */
+/***/ (function(module, exports) {
+
+module.exports = "<h1>Osoby</h1>\r\n\r\n<p *ngIf=\"!persons\"><em>Loading...</em></p>\r\n\r\n<table class='table' *ngIf=\"persons\">\r\n    <thead>\r\n        <tr>\r\n            <th>Imię</th>\r\n            <th>Nazwisko</th>\r\n            <th>Wiek</th>\r\n        </tr>\r\n    </thead>\r\n    <tbody>\r\n        <tr *ngFor=\"let person of persons\">\r\n            <td>{{ person.name }}</td>\r\n            <td>{{ person.surname }}</td>\r\n            <td>{{ person.age }}</td>\r\n        </tr>\r\n    </tbody>\r\n</table>\r\n";
+
+/***/ }),
+/* 37 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = (__webpack_require__(0))(194);
 
 /***/ })
 /******/ ]);

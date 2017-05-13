@@ -1,0 +1,20 @@
+﻿<h1>Osoby</h1>
+
+<p *ngIf="!persons"><em>Loading...</em></p>
+
+<table class='table' *ngIf="persons">
+    <thead>
+        <tr>
+            <th>Imię</th>
+            <th>Nazwisko</th>
+            <th>Wiek</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let person of persons">
+            <td>{{ person.name }}</td>
+            <td>{{ person.surname }}</td>
+            <td>{{ person.age }}</td>
+        </tr>
+    </tbody>
+</table>
