@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CPDivision.Api.Controllers
@@ -7,6 +8,7 @@ namespace CPDivision.Api.Controllers
     public class TestController : Controller
     {
         [HttpGet]
+        [Authorize]
         public IEnumerable<Person> Persons()
         {
             return new List<Person>
@@ -17,12 +19,13 @@ namespace CPDivision.Api.Controllers
 
             };
         }
+    }
 
-        public class Person
-        {
-            public string Name { get; set; }
-            public string Surname { get; set; }
-            public int Age { get; set; } 
-        }
+    public class Person
+    {
+        public string Name { get; set; }
+        public string Surname { get; set; }
+        public int Age { get; set; }
     }
 }
+
